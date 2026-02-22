@@ -11,7 +11,7 @@ def confirmar_presenca(request):
         if form.is_valid():
             confirmacao = form.save()
 
-            #send_mail(
+            send_mail(
                 'Confirmação de Presença – Aniversário da Manuela 🎉',
                 'Obrigada por confirmar!\n\n📍 Local: Rua X, nº Y\n🕒 Horário: 15h',
                 'seuemail@gmail.com',
